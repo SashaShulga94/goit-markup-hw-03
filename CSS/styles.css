@@ -1,0 +1,204 @@
+/* delete standart browser styles, root */
+.link,
+.logo,
+.email,
+.phone,
+.phone-footer,
+.email-footer,
+.address,
+.project-link {
+  text-decoration: none;
+}
+.list,
+.menu-list {
+  list-style: none;
+}
+img {
+  display: block;
+}
+.address-data {
+  font-style: normal;
+}
+
+:root {
+  --primary-font: "Roboto", sans-serif;
+  --primary-text-color-theme-dark: #212121;
+  --secondary-color-theme-gray: #757575;
+  --primary-text-color-theme-light: #ffffff;
+  --secondary-text-color-theme-dark: #000000;
+  --button-color: #188ce8;
+  --accent-color: #2196f3;
+  --primary-background-color-theme-light: #f5f4fa;
+  --secondary-background-color-theme-light: #2f303a;
+  --secondary-text-color-4footer-gray: rgba(255, 255, 255, 0.6);
+}
+body {
+  font-family: var(--primary-font);
+  background-color: var(--primary-text-color-theme-light);
+  color: var(--primary-text-color-theme-dark);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+/* header */
+.logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--secondary-text-color-theme-dark);
+}
+.web {
+  color: var(--accent-color);
+}
+.studio-footer {
+  color: var(--primary-text-color-theme-light);
+}
+.link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color-theme-dark);
+}
+.current {
+  color: var(--accent-color);
+}
+.email,
+.phone {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color-theme-gray);
+}
+.menu-list :hover,
+.phone-footer:hover,
+.email-footer:hover,
+.menu-list :focus,
+.phone-footer:focus,
+.email-footer:focus {
+  color: var(--accent-color);
+}
+
+/* hero */
+.hero-section {
+  background-color: var(--secondary-background-color-theme-light);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-text-color-theme-light);
+}
+.hero-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color-theme-light);
+  background: var(--button-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* features */
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.features-text {
+  line-height: 1.71;
+  color: var(--secondary-color-theme-gray);
+}
+/* what-we-do */
+.what-we-do-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+/* team */
+.our-team {
+  background: var(--primary-background-color-theme-light);
+}
+.our-team-data {
+  background-color: var(--primary-text-color-theme-light);
+}
+.our-team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+.our-teammate {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.our-team-position {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--secondary-color-theme-gray);
+}
+/* FOOTER!!! */
+.footer {
+  background: var(--secondary-background-color-theme-light);
+}
+.address {
+  line-height: 1.71;
+  color: var(--primary-text-color-theme-light);
+}
+.email-footer,
+.phone-footer {
+  line-height: 1.71;
+  color: var(--secondary-text-color-4footer-gray);
+}
+/* portfolio */
+.portfolio-btn {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background: var(--primary-background-color-theme-light);
+  cursor: pointer;
+  border-radius: 4px;
+}
+.portfolio-li :hover,
+.portfolio-li :focus {
+  color: var(--primary-text-color-theme-light);
+  background-color: var(--accent-color);
+}
+.project-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color-theme-dark);
+}
+.e-type {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--secondary-color-theme-gray);
+}
