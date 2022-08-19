@@ -24,6 +24,8 @@ ul, ol{
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 .address-data {
   font-style: normal;
@@ -56,8 +58,13 @@ body {
   padding-right: 15px;
 }
 .section{
-  padding-top: 94px;
   padding-bottom: 94px;
+  padding-top: 94px;
+}
+.list-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .visually-hidden {
   position: absolute;
@@ -73,9 +80,11 @@ body {
 }
 
 /* header */
+
 .page-header{
-  padding-top: 25px;
+  padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid #ECECEC;
 }
 .header-container{
   display: flex;
@@ -169,47 +178,68 @@ body {
   border-radius: 4px;
   cursor: pointer;
 
-  margin: 0 auto;
+  margin: auto;
+  padding: 10px 32px;
 }
 
 /* features */
 
-
+.features-list{
+  display: flex;
+}
+.features-li:not(:last-child){
+  margin-right: 30px;
+}
+.features-li{
+  width: 270px;
+}
 .features-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+
+  margin-bottom: 10px;
 }
 .features-text {
   line-height: 1.71;
   color: var(--secondary-color-theme-gray);
 }
+
 /* what-we-do */
-.what-we-do-title {
+
+.what-we-do-section{
+  padding-bottom: 94px;
+}
+.what-we-do-title, .our-team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+
+  margin-bottom: 50px;
 }
+
 /* team */
+
 .our-team {
   background: var(--primary-background-color-theme-light);
 }
 .our-team-data {
   background-color: var(--primary-text-color-theme-light);
+  Border-radius: 0px 0px 4px 4px;
+
 }
-.our-team-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
+.team-div{
+  padding: 30px 61px;
 }
 .our-teammate {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+
+  padding-bottom: 10px;
 }
 .our-team-position {
   font-size: 16px;
@@ -217,9 +247,13 @@ body {
   text-align: center;
   color: var(--secondary-color-theme-gray);
 }
+
 /* FOOTER!!! */
+
 .footer {
   background: var(--secondary-background-color-theme-light);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .address {
   line-height: 1.71;
@@ -229,6 +263,12 @@ body {
 .phone-footer {
   line-height: 1.71;
   color: var(--secondary-text-color-4footer-gray);
+}
+.address-data{
+  margin-top: 20px;
+}
+.address-list:not(:last-child){
+  margin-bottom: 9px;
 }
 .studio-footer {
   color: var(--primary-text-color-theme-light);
