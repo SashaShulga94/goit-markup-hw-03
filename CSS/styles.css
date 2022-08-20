@@ -267,13 +267,25 @@ body {
 .address-data{
   margin-top: 20px;
 }
-.address-list:not(:last-child){
+/* .address-list{
+  display: flex;
+}
+.address-text{
+  flex-flow: column wrap; 
+} */
+.address-text:not(:last-child){
   margin-bottom: 9px;
 }
 .studio-footer {
   color: var(--primary-text-color-theme-light);
 }
+
 /* portfolio */
+
+.portfolio-section{
+padding-top: 100px;
+padding-bottom: 88px;
+}
 .portfolio-btn {
   font-family: "Roboto";
   font-weight: 500;
@@ -284,12 +296,24 @@ body {
   background: var(--primary-background-color-theme-light);
   cursor: pointer;
   border-radius: 4px;
+
+  padding: 6px 22px 6px 22px;
+}
+.all{
+  padding: 6px 25px 6px 25px;
 }
 .portfolio-li :hover,
 .portfolio-li :focus {
   color: var(--primary-text-color-theme-light);
   background-color: var(--accent-color);
 }
+.portfolio-menu{
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
 .project-name {
   font-weight: 700;
   font-size: 18px;
@@ -301,4 +325,9 @@ body {
   font-size: 16px;
   line-height: 1.88;
   color: var(--secondary-color-theme-gray);
+}
+.portfolio-cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px
 }
